@@ -17,8 +17,7 @@ import numpy as np
 from copy import deepcopy
 
 # Read the input textfile
-lines = open('input_19.txt').readlines()
-lines = [l.replace('\n', '') for l in lines]
+lines = open('input_19.txt').read().splitlines()
 
 # Figure out on which lines in the file the scanners start
 scanners_starts = [i for i in range(len(lines)) if 'scanner' in lines[i]]

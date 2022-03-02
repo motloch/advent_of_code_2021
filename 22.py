@@ -1,8 +1,7 @@
 import numpy as np
 
 # Load input file
-lines = open('input_22.txt').readlines()
-lines = [l.replace('\n','') for l in lines]
+lines = open('input_22.txt').read().splitlines()
 
 # Maximal absolute value of x/y/z during initialization
 N = 50

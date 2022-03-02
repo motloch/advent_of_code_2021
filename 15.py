@@ -5,8 +5,7 @@ import heapq
 MAXDIST = 1e8
 
 # Load input
-lines = open('input_15.txt').readlines()
-lines = [l.replace('\n', '') for l in lines]
+lines = open('input_15.txt').read().splitlines()
 
 N, M = len(lines), len(lines[0])
 

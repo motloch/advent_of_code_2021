@@ -16,8 +16,7 @@ NUM_HW = 7 # Number of hallways where the amphipods can stop (not front of the r
 ### Read input, initialize
 ###
 
-lines = open('input_23_second.txt').readlines()
-lines = [l.replace('\n', '') for l in lines]
+lines = open('input_23_second.txt').read().splitlines()
 
 N = len(lines) - 3 #length of a room
 

@@ -1,11 +1,11 @@
-lines = open('input_2.txt').readlines()
+lines = open('input_2.txt').read().splitlines()
 
 # First part
 horizontal = 0
 depth = 0
 
 for line in lines:
-    t, n = line.replace('\n','').split(' ')
+    t, n = line.split(' ')
     if t == 'forward':
         horizontal += int(n)
     if t == 'up':
@@ -21,7 +21,7 @@ depth = 0
 aim = 0
 
 for line in lines:
-    t, n = line.replace('\n','').split(' ')
+    t, n = line.split(' ')
     if t == 'forward':
         horizontal += int(n)
         depth += aim*int(n)

@@ -1,8 +1,7 @@
 import numpy as np
 
 # Input
-lines = open('input_20.txt').readlines()
-lines = [l.replace('\n', '') for l in lines]
+lines = open('input_20.txt').read().splitlines()
 
 # image enhancement algorithm as array of ones and zeros
 # 0 = dark pixel, 1 = light pixel

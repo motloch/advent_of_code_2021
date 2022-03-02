@@ -1,5 +1,4 @@
-lines = open('input_8.txt').readlines()
-lines = [l.replace('\n', '') for l in lines]
+lines = open('input_8.txt').read().splitlines()
 
 res = 0
 

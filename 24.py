@@ -27,7 +27,7 @@
 NINST = 14
 
 # Read lines with instructions
-lines = [l.replace('\n', '') for l in open('input_24.txt').readlines()]
+lines = open('input_24.txt').read().splitlines()
 # Separate them into instructions that encode the function f
 instr = [lines[18*i:18*(i+1)] for i in range(NINST)]
 

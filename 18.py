@@ -139,8 +139,7 @@ def magnitude(s):
 ###
 
 # Load input
-lines = open('input_18.txt').readlines()
-lines = [l.replace('\n', '') for l in lines]
+lines = open('input_18.txt').read().splitlines()
 
 # Perform addition of all numbers from the input and return the magnitude of the result
 s = lines[0]

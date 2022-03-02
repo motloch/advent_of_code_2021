@@ -1,7 +1,7 @@
 import numpy as np
 
 # Read in the input file
-lines = [l.replace('\n', '') for l in open('input_25.txt').readlines()]
+lines = open('input_25.txt').read().splitlines()
 
 # Size of the array
 N,M = len(lines), len(lines[0])

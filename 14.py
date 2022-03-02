@@ -1,5 +1,4 @@
-lines = open('input_14.txt').readlines()
-lines = [l.replace('\n', '') for l in lines]
+lines = open('input_14.txt').read().splitlines()
 
 # Load pair insertion rules as a dictionary
 d = {}

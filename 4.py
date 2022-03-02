@@ -1,9 +1,9 @@
 import numpy as np
 
-lines = open('input_4.txt').readlines()
+lines = open('input_4.txt').read().splitlines()
 
 # Read winning numbers
-win_nums = lines[0].replace('\n', '').split(',')
+win_nums = lines[0].split(',')
 win_nums = [int(w) for w in win_nums]
 
 def is_win(a):
@@ -25,15 +25,15 @@ scores = []
 # Do the calculation
 for i in range(100):
     # Load the board, save it as a 2d array
-    l1 = lines[2 + 6*i].replace('\n', '').replace('  ', ' ').replace('  ', ' ').replace('  ', ' ').split(' ')
+    l1 = lines[2 + 6*i].replace('  ', ' ').replace('  ', ' ').replace('  ', ' ').split(' ')
     l1 = [int(l) for l in l1]                                                  
-    l2 = lines[3 + 6*i].replace('\n', '').replace('  ', ' ').replace('  ', ' ').replace('  ', ' ').split(' ')
+    l2 = lines[3 + 6*i].replace('  ', ' ').replace('  ', ' ').replace('  ', ' ').split(' ')
     l2 = [int(l) for l in l2]                                                  
-    l3 = lines[4 + 6*i].replace('\n', '').replace('  ', ' ').replace('  ', ' ').replace('  ', ' ').split(' ')
+    l3 = lines[4 + 6*i].replace('  ', ' ').replace('  ', ' ').replace('  ', ' ').split(' ')
     l3 = [int(l) for l in l3]                                                  
-    l4 = lines[5 + 6*i].replace('\n', '').replace('  ', ' ').replace('  ', ' ').replace('  ', ' ').split(' ')
+    l4 = lines[5 + 6*i].replace('  ', ' ').replace('  ', ' ').replace('  ', ' ').split(' ')
     l4 = [int(l) for l in l4]                                                  
-    l5 = lines[6 + 6*i].replace('\n', '').replace('  ', ' ').replace('  ', ' ').replace('  ', ' ').split(' ')
+    l5 = lines[6 + 6*i].replace('  ', ' ').replace('  ', ' ').replace('  ', ' ').split(' ')
     l5 = [int(l) for l in l5]
 
     arr = np.zeros((5,5))

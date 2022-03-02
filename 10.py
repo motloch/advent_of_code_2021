@@ -1,7 +1,6 @@
 import numpy as np
 
-lines = open('input_10.txt').readlines()
-lines = [l.replace('\n', '') for l in lines]
+lines = open('input_10.txt').read().splitlines()
 
 ###
 # First part

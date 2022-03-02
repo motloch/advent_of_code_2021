@@ -1,13 +1,13 @@
 import numpy as np
 
-flines = open('input_5.txt').readlines() 
+flines = open('input_5.txt').read().splitlines()
 N = 1000
 
 arr = np.zeros((N,N))
 
 for fline in flines:
     # Read in instructions
-    foo, _, foo2 = fline.replace('\n', '').split(' ')
+    foo, _, foo2 = fline.split(' ')
     x1, y1 = foo.split(',')
     x2, y2 = foo2.split(',')
     x1 = int(x1)
@@ -41,7 +41,7 @@ arr = np.zeros((N,N))
 
 for fline in flines:
     # Read in instructions
-    foo, _, foo2 = fline.replace('\n', '').split(' ')
+    foo, _, foo2 = fline.split(' ')
     x1, y1 = foo.split(',')
     x2, y2 = foo2.split(',')
     x1 = int(x1)

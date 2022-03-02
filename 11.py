@@ -1,8 +1,7 @@
 import numpy as np
 
 # Load an array of digits
-arr = open('input_11.txt').readlines()
-arr = [x.replace('\n', '') for x in arr]
+arr = open('input_11.txt').read().splitlines()
 arr = [[int(y) for y in x] for x in arr]
 arr = np.array(arr, dtype = int)
 N = len(arr)

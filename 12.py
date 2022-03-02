@@ -1,5 +1,4 @@
-lines = open('input_12.txt').readlines()
-lines = [l.replace('\n', '') for l in lines]
+lines = open('input_12.txt').read().splitlines()
 
 #Read in the graph as a dictionary - for each vertex save the neighbors as a list
 graph = {}
